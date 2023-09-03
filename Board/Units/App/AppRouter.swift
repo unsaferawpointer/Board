@@ -16,6 +16,8 @@ protocol Routable {
 	///    - sidebar: Sidebar view-controller
 	///    - detail: Detail view-controller
 	func showWindowAndOrderFront(sidebar: NSViewController, detail: NSViewController)
+
+	func presentDetail(_ viewController: NSViewController)
 }
 
 /// AppRouter of the App
@@ -51,6 +53,20 @@ extension AppRouter: Routable {
 	func showWindowAndOrderFront(sidebar: NSViewController, detail: NSViewController) {
 		configureUserInterface(sidebar: sidebar, detail: detail)
 		mainWindow.makeKeyAndOrderFront(nil)
+	}
+
+	func presentDetail(_ viewController: NSViewController) {
+		guard let splitViewController else {
+			return
+		}
+
+		if splitViewController.splitViewItems.count == 2 {
+			let splitItem = splitViewController.splitViewItems[1]
+			splitViewController.removeSplitViewItem(splitItem)
+		}
+
+		let new = NSSplitViewItem(viewController: viewController)
+		splitViewController.addSplitViewItem(new)
 	}
 }
 

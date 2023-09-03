@@ -19,6 +19,22 @@
 		4C18604A2AA47C9B0066CFAE /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860492AA47C9B0066CFAE /* AppRouter.swift */; };
 		4C18604D2AA47CB40066CFAE /* NSWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18604C2AA47CB40066CFAE /* NSWindow+Extension.swift */; };
 		4C18604F2AA47CBA0066CFAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18604E2AA47CBA0066CFAE /* ViewController.swift */; };
+		4C1860522AA47D6F0066CFAE /* NavigationUnitAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860512AA47D6F0066CFAE /* NavigationUnitAssembly.swift */; };
+		4C1860562AA48EA10066CFAE /* NavigationUnitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860552AA48EA10066CFAE /* NavigationUnitPresenter.swift */; };
+		4C1860582AA492780066CFAE /* NavigationUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860572AA492780066CFAE /* NavigationUnitView.swift */; };
+		4C18605C2AA4AAD80066CFAE /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18605B2AA4AAD80066CFAE /* ConfigurableView.swift */; };
+		4C18605E2AA4AAF90066CFAE /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18605D2AA4AAF90066CFAE /* ViewConfiguration.swift */; };
+		4C1860622AA4ACD50066CFAE /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860612AA4ACD50066CFAE /* LabelView.swift */; };
+		4C1860642AA4ACF40066CFAE /* LabelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860632AA4ACF40066CFAE /* LabelConfig.swift */; };
+		4C1860672AA4B8E30066CFAE /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860662AA4B8E30066CFAE /* NavigationItem.swift */; };
+		4C1860692AA4BAA90066CFAE /* ViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860682AA4BAA90066CFAE /* ViewOutput.swift */; };
+		4C18606E2AA4C0CB0066CFAE /* AppStateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18606D2AA4C0CB0066CFAE /* AppStateProvider.swift */; };
+		4C1860702AA4C0EA0066CFAE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18606F2AA4C0EA0066CFAE /* AppState.swift */; };
+		4C1860722AA4C13D0066CFAE /* StateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860712AA4C13D0066CFAE /* StateProvider.swift */; };
+		4C1860752AA4C38C0066CFAE /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860742AA4C38C0066CFAE /* TableItem.swift */; };
+		4C18607C2AA4DC0E0066CFAE /* NavigationUnitPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18607B2AA4DC0E0066CFAE /* NavigationUnitPresenterTests.swift */; };
+		4C18607F2AA4DC5C0066CFAE /* StateProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18607E2AA4DC5C0066CFAE /* StateProviderMock.swift */; };
+		4C1860832AA4E7EE0066CFAE /* NavigationViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860822AA4E7EE0066CFAE /* NavigationViewMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +71,22 @@
 		4C1860492AA47C9B0066CFAE /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		4C18604C2AA47CB40066CFAE /* NSWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSWindow+Extension.swift"; sourceTree = "<group>"; };
 		4C18604E2AA47CBA0066CFAE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C1860512AA47D6F0066CFAE /* NavigationUnitAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUnitAssembly.swift; sourceTree = "<group>"; };
+		4C1860552AA48EA10066CFAE /* NavigationUnitPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUnitPresenter.swift; sourceTree = "<group>"; };
+		4C1860572AA492780066CFAE /* NavigationUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUnitView.swift; sourceTree = "<group>"; };
+		4C18605B2AA4AAD80066CFAE /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		4C18605D2AA4AAF90066CFAE /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		4C1860612AA4ACD50066CFAE /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		4C1860632AA4ACF40066CFAE /* LabelConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelConfig.swift; sourceTree = "<group>"; };
+		4C1860662AA4B8E30066CFAE /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
+		4C1860682AA4BAA90066CFAE /* ViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutput.swift; sourceTree = "<group>"; };
+		4C18606D2AA4C0CB0066CFAE /* AppStateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateProvider.swift; sourceTree = "<group>"; };
+		4C18606F2AA4C0EA0066CFAE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		4C1860712AA4C13D0066CFAE /* StateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateProvider.swift; sourceTree = "<group>"; };
+		4C1860742AA4C38C0066CFAE /* TableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
+		4C18607B2AA4DC0E0066CFAE /* NavigationUnitPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUnitPresenterTests.swift; sourceTree = "<group>"; };
+		4C18607E2AA4DC5C0066CFAE /* StateProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateProviderMock.swift; sourceTree = "<group>"; };
+		4C1860822AA4E7EE0066CFAE /* NavigationViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +142,7 @@
 				4C18601D2AA47BE80066CFAE /* Main.storyboard */,
 				4C18601B2AA47BE80066CFAE /* Assets.xcassets */,
 				4C1860182AA47BE70066CFAE /* Board.xcdatamodeld */,
+				4C18606C2AA4C0B10066CFAE /* Common */,
 				4C1860442AA47C480066CFAE /* Units */,
 				4C1860482AA47C7E0066CFAE /* DesignSystem */,
 			);
@@ -119,6 +152,8 @@
 		4C1860282AA47BE80066CFAE /* BoardTests */ = {
 			isa = PBXGroup;
 			children = (
+				4C18607D2AA4DC490066CFAE /* Mocks */,
+				4C1860772AA4DBD20066CFAE /* Units */,
 				4C1860292AA47BE80066CFAE /* BoardTests.swift */,
 			);
 			path = BoardTests;
@@ -137,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				4C1860452AA47C580066CFAE /* App */,
+				4C1860502AA47D5A0066CFAE /* Navigation */,
 			);
 			path = Units;
 			sourceTree = "<group>";
@@ -144,6 +180,8 @@
 		4C1860452AA47C580066CFAE /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4C18606F2AA4C0EA0066CFAE /* AppState.swift */,
+				4C18606D2AA4C0CB0066CFAE /* AppStateProvider.swift */,
 				4C1860462AA47C6D0066CFAE /* AppCoordinator.swift */,
 				4C1860492AA47C9B0066CFAE /* AppRouter.swift */,
 				4C1860142AA47BE70066CFAE /* AppDelegate.swift */,
@@ -154,6 +192,8 @@
 		4C1860482AA47C7E0066CFAE /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				4C1860732AA4C37E0066CFAE /* TableAdapter */,
+				4C18605A2AA4AAC90066CFAE /* Common */,
 				4C18604E2AA47CBA0066CFAE /* ViewController.swift */,
 				4C18604B2AA47CA10066CFAE /* Extensions */,
 			);
@@ -166,6 +206,110 @@
 				4C18604C2AA47CB40066CFAE /* NSWindow+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C1860502AA47D5A0066CFAE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860762AA4C3E70066CFAE /* Cells */,
+				4C1860652AA4B8D10066CFAE /* Models */,
+				4C1860512AA47D6F0066CFAE /* NavigationUnitAssembly.swift */,
+				4C1860552AA48EA10066CFAE /* NavigationUnitPresenter.swift */,
+				4C1860572AA492780066CFAE /* NavigationUnitView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		4C18605A2AA4AAC90066CFAE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860682AA4BAA90066CFAE /* ViewOutput.swift */,
+				4C18605B2AA4AAD80066CFAE /* ConfigurableView.swift */,
+				4C18605D2AA4AAF90066CFAE /* ViewConfiguration.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4C1860602AA4ACC90066CFAE /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860612AA4ACD50066CFAE /* LabelView.swift */,
+				4C1860632AA4ACF40066CFAE /* LabelConfig.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		4C1860652AA4B8D10066CFAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860662AA4B8E30066CFAE /* NavigationItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C18606C2AA4C0B10066CFAE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860712AA4C13D0066CFAE /* StateProvider.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4C1860732AA4C37E0066CFAE /* TableAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860742AA4C38C0066CFAE /* TableItem.swift */,
+			);
+			path = TableAdapter;
+			sourceTree = "<group>";
+		};
+		4C1860762AA4C3E70066CFAE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860602AA4ACC90066CFAE /* Label */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4C1860772AA4DBD20066CFAE /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860782AA4DBD90066CFAE /* Navigation */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		4C1860782AA4DBD90066CFAE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860792AA4DBDF0066CFAE /* Mocks */,
+				4C18607A2AA4DBE40066CFAE /* Tests */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		4C1860792AA4DBDF0066CFAE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860822AA4E7EE0066CFAE /* NavigationViewMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4C18607A2AA4DBE40066CFAE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4C18607B2AA4DC0E0066CFAE /* NavigationUnitPresenterTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4C18607D2AA4DC490066CFAE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4C18607E2AA4DC5C0066CFAE /* StateProviderMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,13 +442,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1860582AA492780066CFAE /* NavigationUnitView.swift in Sources */,
 				4C18601A2AA47BE70066CFAE /* Board.xcdatamodeld in Sources */,
+				4C1860722AA4C13D0066CFAE /* StateProvider.swift in Sources */,
 				4C18604A2AA47C9B0066CFAE /* AppRouter.swift in Sources */,
+				4C1860702AA4C0EA0066CFAE /* AppState.swift in Sources */,
+				4C1860752AA4C38C0066CFAE /* TableItem.swift in Sources */,
+				4C1860692AA4BAA90066CFAE /* ViewOutput.swift in Sources */,
+				4C18605E2AA4AAF90066CFAE /* ViewConfiguration.swift in Sources */,
 				4C18604D2AA47CB40066CFAE /* NSWindow+Extension.swift in Sources */,
+				4C1860522AA47D6F0066CFAE /* NavigationUnitAssembly.swift in Sources */,
 				4C1860472AA47C6D0066CFAE /* AppCoordinator.swift in Sources */,
 				4C1860432AA47C100066CFAE /* main.swift in Sources */,
+				4C1860622AA4ACD50066CFAE /* LabelView.swift in Sources */,
 				4C18604F2AA47CBA0066CFAE /* ViewController.swift in Sources */,
+				4C18605C2AA4AAD80066CFAE /* ConfigurableView.swift in Sources */,
+				4C1860562AA48EA10066CFAE /* NavigationUnitPresenter.swift in Sources */,
 				4C1860152AA47BE70066CFAE /* AppDelegate.swift in Sources */,
+				4C1860672AA4B8E30066CFAE /* NavigationItem.swift in Sources */,
+				4C1860642AA4ACF40066CFAE /* LabelConfig.swift in Sources */,
+				4C18606E2AA4C0CB0066CFAE /* AppStateProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +469,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1860832AA4E7EE0066CFAE /* NavigationViewMock.swift in Sources */,
+				4C18607F2AA4DC5C0066CFAE /* StateProviderMock.swift in Sources */,
+				4C18607C2AA4DC0E0066CFAE /* NavigationUnitPresenterTests.swift in Sources */,
 				4C18602A2AA47BE80066CFAE /* BoardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
