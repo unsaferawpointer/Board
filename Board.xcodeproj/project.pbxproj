@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		4C1860152AA47BE70066CFAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860142AA47BE70066CFAE /* AppDelegate.swift */; };
-		4C1860172AA47BE70066CFAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860162AA47BE70066CFAE /* ViewController.swift */; };
 		4C18601A2AA47BE70066CFAE /* Board.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860182AA47BE70066CFAE /* Board.xcdatamodeld */; };
 		4C18601C2AA47BE80066CFAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C18601B2AA47BE80066CFAE /* Assets.xcassets */; };
 		4C18601F2AA47BE80066CFAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C18601D2AA47BE80066CFAE /* Main.storyboard */; };
 		4C18602A2AA47BE80066CFAE /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860292AA47BE80066CFAE /* BoardTests.swift */; };
 		4C1860342AA47BE80066CFAE /* BoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860332AA47BE80066CFAE /* BoardUITests.swift */; };
 		4C1860362AA47BE80066CFAE /* BoardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860352AA47BE80066CFAE /* BoardUITestsLaunchTests.swift */; };
+		4C1860432AA47C100066CFAE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860422AA47C100066CFAE /* main.swift */; };
+		4C1860472AA47C6D0066CFAE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860462AA47C6D0066CFAE /* AppCoordinator.swift */; };
+		4C18604A2AA47C9B0066CFAE /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860492AA47C9B0066CFAE /* AppRouter.swift */; };
+		4C18604D2AA47CB40066CFAE /* NSWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18604C2AA47CB40066CFAE /* NSWindow+Extension.swift */; };
+		4C18604F2AA47CBA0066CFAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18604E2AA47CBA0066CFAE /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 /* Begin PBXFileReference section */
 		4C1860112AA47BE70066CFAE /* Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Board.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1860142AA47BE70066CFAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C1860162AA47BE70066CFAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C1860192AA47BE70066CFAE /* Board.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Board.xcdatamodel; sourceTree = "<group>"; };
 		4C18601B2AA47BE80066CFAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C18601E2AA47BE80066CFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		4C18602F2AA47BE80066CFAE /* BoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1860332AA47BE80066CFAE /* BoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardUITests.swift; sourceTree = "<group>"; };
 		4C1860352AA47BE80066CFAE /* BoardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C1860422AA47C100066CFAE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4C1860462AA47C6D0066CFAE /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4C1860492AA47C9B0066CFAE /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		4C18604C2AA47CB40066CFAE /* NSWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSWindow+Extension.swift"; sourceTree = "<group>"; };
+		4C18604E2AA47CBA0066CFAE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,13 @@
 		4C1860132AA47BE70066CFAE /* Board */ = {
 			isa = PBXGroup;
 			children = (
-				4C1860142AA47BE70066CFAE /* AppDelegate.swift */,
-				4C1860162AA47BE70066CFAE /* ViewController.swift */,
-				4C18601B2AA47BE80066CFAE /* Assets.xcassets */,
-				4C18601D2AA47BE80066CFAE /* Main.storyboard */,
+				4C1860422AA47C100066CFAE /* main.swift */,
 				4C1860202AA47BE80066CFAE /* Board.entitlements */,
+				4C18601D2AA47BE80066CFAE /* Main.storyboard */,
+				4C18601B2AA47BE80066CFAE /* Assets.xcassets */,
 				4C1860182AA47BE70066CFAE /* Board.xcdatamodeld */,
+				4C1860442AA47C480066CFAE /* Units */,
+				4C1860482AA47C7E0066CFAE /* DesignSystem */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -122,6 +131,41 @@
 				4C1860352AA47BE80066CFAE /* BoardUITestsLaunchTests.swift */,
 			);
 			path = BoardUITests;
+			sourceTree = "<group>";
+		};
+		4C1860442AA47C480066CFAE /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860452AA47C580066CFAE /* App */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		4C1860452AA47C580066CFAE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860462AA47C6D0066CFAE /* AppCoordinator.swift */,
+				4C1860492AA47C9B0066CFAE /* AppRouter.swift */,
+				4C1860142AA47BE70066CFAE /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4C1860482AA47C7E0066CFAE /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				4C18604E2AA47CBA0066CFAE /* ViewController.swift */,
+				4C18604B2AA47CA10066CFAE /* Extensions */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		4C18604B2AA47CA10066CFAE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C18604C2AA47CB40066CFAE /* NSWindow+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C18601A2AA47BE70066CFAE /* Board.xcdatamodeld in Sources */,
-				4C1860172AA47BE70066CFAE /* ViewController.swift in Sources */,
+				4C18604A2AA47C9B0066CFAE /* AppRouter.swift in Sources */,
+				4C18604D2AA47CB40066CFAE /* NSWindow+Extension.swift in Sources */,
+				4C1860472AA47C6D0066CFAE /* AppCoordinator.swift in Sources */,
+				4C1860432AA47C100066CFAE /* main.swift in Sources */,
+				4C18604F2AA47CBA0066CFAE /* ViewController.swift in Sources */,
 				4C1860152AA47BE70066CFAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,14 +477,14 @@
 				DEVELOPMENT_TEAM = 48KV35Y6PN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.paperwave.Board;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,14 +505,14 @@
 				DEVELOPMENT_TEAM = 48KV35Y6PN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.paperwave.Board;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,7 +530,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48KV35Y6PN;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.paperwave.BoardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,7 +549,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48KV35Y6PN;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.paperwave.BoardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
