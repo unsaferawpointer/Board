@@ -9,7 +9,7 @@ import Cocoa
 
 final class LabelView: NSTableCellView, ConfigurableView {
 
-	static var userIdentifier: String = "label"
+	static var reuseIdentifier: String = "label"
 
 	typealias Configuration = LabelConfig
 

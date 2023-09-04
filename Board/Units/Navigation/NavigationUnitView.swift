@@ -76,7 +76,7 @@ final class NavigationUnitView: NSViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		output?.viewControllerDidChangeState(.viewDidLoad)
+		output?.viewDidChangeState(.viewDidLoad)
 	}
 }
 

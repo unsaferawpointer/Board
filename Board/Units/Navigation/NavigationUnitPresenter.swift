@@ -29,7 +29,7 @@ final class NavigationUnitPresenter {
 // MARK: - ViewOutput
 extension NavigationUnitPresenter: ViewOutput {
 
-	func viewControllerDidChangeState(_ newState: ViewControllerState) {
+	func viewDidChangeState(_ newState: ViewControllerState) {
 		guard case .viewDidLoad = newState else {
 			return
 		}

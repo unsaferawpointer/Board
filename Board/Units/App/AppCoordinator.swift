@@ -48,7 +48,7 @@ private extension AppCoordinator {
 
 	func presentedDetailController(for item: NavigationItem) -> NSViewController {
 		switch item {
-		case .backlog: 		return ViewController(text: "Backlog")
+		case .backlog: 		return BacklogUnitAssembly.build(stateProvider: stateProvider)
 		case .board: 		return ViewController(text: "Board")
 		}
 	}

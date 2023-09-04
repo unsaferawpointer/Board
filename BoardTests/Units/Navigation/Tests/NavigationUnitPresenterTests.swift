@@ -38,7 +38,7 @@ extension NavigationUnitPresenterTests {
 		stateProvider.stubs.state = .init(navigation: .board)
 
 		// Act
-		sut.viewControllerDidChangeState(.viewDidLoad)
+		sut.viewDidChangeState(.viewDidLoad)
 
 		// Assert
 		guard case let .display(labels) = view.invocations[0] else {
@@ -58,7 +58,7 @@ extension NavigationUnitPresenterTests {
 		// Arrange
 		stateProvider.stubs.state = .init(navigation: .board)
 
-		sut.viewControllerDidChangeState(.viewDidLoad)
+		sut.viewDidChangeState(.viewDidLoad)
 
 		guard case let .display(labels) = view.invocations[0] else {
 			return XCTFail("`display` should bew invocked" )

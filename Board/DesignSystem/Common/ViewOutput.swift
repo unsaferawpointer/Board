@@ -13,7 +13,7 @@ protocol ViewOutput {
 	///
 	/// - Parameters:
 	///    - newState: New life-cycle state of the view-controller
-	func viewControllerDidChangeState(_ newState: ViewControllerState)
+	func viewDidChangeState(_ newState: ViewControllerState)
 }
 
 enum ViewControllerState {

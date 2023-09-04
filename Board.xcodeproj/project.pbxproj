@@ -31,10 +31,37 @@
 		4C18606E2AA4C0CB0066CFAE /* AppStateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18606D2AA4C0CB0066CFAE /* AppStateProvider.swift */; };
 		4C1860702AA4C0EA0066CFAE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18606F2AA4C0EA0066CFAE /* AppState.swift */; };
 		4C1860722AA4C13D0066CFAE /* StateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860712AA4C13D0066CFAE /* StateProvider.swift */; };
-		4C1860752AA4C38C0066CFAE /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860742AA4C38C0066CFAE /* TableItem.swift */; };
 		4C18607C2AA4DC0E0066CFAE /* NavigationUnitPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18607B2AA4DC0E0066CFAE /* NavigationUnitPresenterTests.swift */; };
 		4C18607F2AA4DC5C0066CFAE /* StateProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18607E2AA4DC5C0066CFAE /* StateProviderMock.swift */; };
 		4C1860832AA4E7EE0066CFAE /* NavigationViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860822AA4E7EE0066CFAE /* NavigationViewMock.swift */; };
+		4C1860862AA4EF1C0066CFAE /* BacklogUnitAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860852AA4EF1C0066CFAE /* BacklogUnitAssembly.swift */; };
+		4C1860882AA4EF7A0066CFAE /* BacklogUnitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860872AA4EF7A0066CFAE /* BacklogUnitPresenter.swift */; };
+		4C18608A2AA4F2330066CFAE /* BacklogUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860892AA4F2330066CFAE /* BacklogUnitView.swift */; };
+		4C18608D2AA4F5EA0066CFAE /* NSTableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18608C2AA4F5EA0066CFAE /* NSTableView+Extension.swift */; };
+		4C1860902AA4F7B40066CFAE /* BacklogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18608F2AA4F7B40066CFAE /* BacklogItem.swift */; };
+		4C1860932AA4F9490066CFAE /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860922AA4F9490066CFAE /* TextCell.swift */; };
+		4C1860952AA4F9530066CFAE /* TextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860942AA4F9530066CFAE /* TextItem.swift */; };
+		4C18609A2AA50CD10066CFAE /* BacklogUnitView+TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860992AA50CD10066CFAE /* BacklogUnitView+TableDelegate.swift */; };
+		4C18609C2AA50D000066CFAE /* BacklogUnitView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18609B2AA50D000066CFAE /* BacklogUnitView+DataSource.swift */; };
+		4C18609E2AA50D930066CFAE /* BacklogViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18609D2AA50D930066CFAE /* BacklogViewOutput.swift */; };
+		4C1860A02AA50DAF0066CFAE /* BacklogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18609F2AA50DAF0066CFAE /* BacklogView.swift */; };
+		4C1860A22AA50E300066CFAE /* NSScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860A12AA50E300066CFAE /* NSScrollView+Extension.swift */; };
+		4C1860A92AA519060066CFAE /* ToggleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860A82AA519060066CFAE /* ToggleCell.swift */; };
+		4C1860AB2AA519130066CFAE /* ToggleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860AA2AA519130066CFAE /* ToggleItem.swift */; };
+		4C1860AD2AA59D780066CFAE /* NSImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860AC2AA59D780066CFAE /* NSImage+Extension.swift */; };
+		4C1860B02AA5AF940066CFAE /* ConfigurableMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860AF2AA5AF940066CFAE /* ConfigurableMenu.swift */; };
+		4C1860B22AA5AFC70066CFAE /* MenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860B12AA5AFC70066CFAE /* MenuConfiguration.swift */; };
+		4C1860B42AA5AFED0066CFAE /* MenuItemConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860B32AA5AFED0066CFAE /* MenuItemConfiguration.swift */; };
+		4C1860B62AA5B00A0066CFAE /* ConfigurableMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860B52AA5B00A0066CFAE /* ConfigurableMenuItem.swift */; };
+		4C1860B82AA601820066CFAE /* BacklogRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860B72AA601820066CFAE /* BacklogRowModel.swift */; };
+		4C1860BA2AA607740066CFAE /* NSView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860B92AA607740066CFAE /* NSView+Extension.swift */; };
+		4C1860BC2AA60D790066CFAE /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860BB2AA60D790066CFAE /* CGFloat+Extension.swift */; };
+		4C1860BE2AA610B80066CFAE /* BacklogUnitInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860BD2AA610B80066CFAE /* BacklogUnitInteractor.swift */; };
+		4C1860C42AA6131A0066CFAE /* BacklogViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860C32AA6131A0066CFAE /* BacklogViewMock.swift */; };
+		4C1860C62AA613960066CFAE /* BacklogUnitPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860C52AA613960066CFAE /* BacklogUnitPresenterTests.swift */; };
+		4C1860C82AA614710066CFAE /* BacklogInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860C72AA614710066CFAE /* BacklogInteractorMock.swift */; };
+		4C1860CB2AA616440066CFAE /* UUID+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860CA2AA616440066CFAE /* UUID+Extension.swift */; };
+		4C1860CD2AA616640066CFAE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860CC2AA616640066CFAE /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,10 +110,37 @@
 		4C18606D2AA4C0CB0066CFAE /* AppStateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateProvider.swift; sourceTree = "<group>"; };
 		4C18606F2AA4C0EA0066CFAE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4C1860712AA4C13D0066CFAE /* StateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateProvider.swift; sourceTree = "<group>"; };
-		4C1860742AA4C38C0066CFAE /* TableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
 		4C18607B2AA4DC0E0066CFAE /* NavigationUnitPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUnitPresenterTests.swift; sourceTree = "<group>"; };
 		4C18607E2AA4DC5C0066CFAE /* StateProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateProviderMock.swift; sourceTree = "<group>"; };
 		4C1860822AA4E7EE0066CFAE /* NavigationViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewMock.swift; sourceTree = "<group>"; };
+		4C1860852AA4EF1C0066CFAE /* BacklogUnitAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogUnitAssembly.swift; sourceTree = "<group>"; };
+		4C1860872AA4EF7A0066CFAE /* BacklogUnitPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogUnitPresenter.swift; sourceTree = "<group>"; };
+		4C1860892AA4F2330066CFAE /* BacklogUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogUnitView.swift; sourceTree = "<group>"; };
+		4C18608C2AA4F5EA0066CFAE /* NSTableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+Extension.swift"; sourceTree = "<group>"; };
+		4C18608F2AA4F7B40066CFAE /* BacklogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogItem.swift; sourceTree = "<group>"; };
+		4C1860922AA4F9490066CFAE /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		4C1860942AA4F9530066CFAE /* TextItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextItem.swift; sourceTree = "<group>"; };
+		4C1860992AA50CD10066CFAE /* BacklogUnitView+TableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BacklogUnitView+TableDelegate.swift"; sourceTree = "<group>"; };
+		4C18609B2AA50D000066CFAE /* BacklogUnitView+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BacklogUnitView+DataSource.swift"; sourceTree = "<group>"; };
+		4C18609D2AA50D930066CFAE /* BacklogViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogViewOutput.swift; sourceTree = "<group>"; };
+		4C18609F2AA50DAF0066CFAE /* BacklogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogView.swift; sourceTree = "<group>"; };
+		4C1860A12AA50E300066CFAE /* NSScrollView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSScrollView+Extension.swift"; sourceTree = "<group>"; };
+		4C1860A82AA519060066CFAE /* ToggleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleCell.swift; sourceTree = "<group>"; };
+		4C1860AA2AA519130066CFAE /* ToggleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleItem.swift; sourceTree = "<group>"; };
+		4C1860AC2AA59D780066CFAE /* NSImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Extension.swift"; sourceTree = "<group>"; };
+		4C1860AF2AA5AF940066CFAE /* ConfigurableMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableMenu.swift; sourceTree = "<group>"; };
+		4C1860B12AA5AFC70066CFAE /* MenuConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuConfiguration.swift; sourceTree = "<group>"; };
+		4C1860B32AA5AFED0066CFAE /* MenuItemConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemConfiguration.swift; sourceTree = "<group>"; };
+		4C1860B52AA5B00A0066CFAE /* ConfigurableMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableMenuItem.swift; sourceTree = "<group>"; };
+		4C1860B72AA601820066CFAE /* BacklogRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogRowModel.swift; sourceTree = "<group>"; };
+		4C1860B92AA607740066CFAE /* NSView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+Extension.swift"; sourceTree = "<group>"; };
+		4C1860BB2AA60D790066CFAE /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		4C1860BD2AA610B80066CFAE /* BacklogUnitInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogUnitInteractor.swift; sourceTree = "<group>"; };
+		4C1860C32AA6131A0066CFAE /* BacklogViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogViewMock.swift; sourceTree = "<group>"; };
+		4C1860C52AA613960066CFAE /* BacklogUnitPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogUnitPresenterTests.swift; sourceTree = "<group>"; };
+		4C1860C72AA614710066CFAE /* BacklogInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogInteractorMock.swift; sourceTree = "<group>"; };
+		4C1860CA2AA616440066CFAE /* UUID+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUID+Extension.swift"; sourceTree = "<group>"; };
+		4C1860CC2AA616640066CFAE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +197,7 @@
 				4C18601B2AA47BE80066CFAE /* Assets.xcassets */,
 				4C1860182AA47BE70066CFAE /* Board.xcdatamodeld */,
 				4C18606C2AA4C0B10066CFAE /* Common */,
+				4C18608E2AA4F7990066CFAE /* Models */,
 				4C1860442AA47C480066CFAE /* Units */,
 				4C1860482AA47C7E0066CFAE /* DesignSystem */,
 			);
@@ -152,6 +207,7 @@
 		4C1860282AA47BE80066CFAE /* BoardTests */ = {
 			isa = PBXGroup;
 			children = (
+				4C1860C92AA616310066CFAE /* Extensions */,
 				4C18607D2AA4DC490066CFAE /* Mocks */,
 				4C1860772AA4DBD20066CFAE /* Units */,
 				4C1860292AA47BE80066CFAE /* BoardTests.swift */,
@@ -173,6 +229,7 @@
 			children = (
 				4C1860452AA47C580066CFAE /* App */,
 				4C1860502AA47D5A0066CFAE /* Navigation */,
+				4C1860842AA4EEFF0066CFAE /* Backlog */,
 			);
 			path = Units;
 			sourceTree = "<group>";
@@ -192,7 +249,8 @@
 		4C1860482AA47C7E0066CFAE /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				4C1860732AA4C37E0066CFAE /* TableAdapter */,
+				4C1860AE2AA5AF5E0066CFAE /* Menu */,
+				4C1860912AA4F93D0066CFAE /* Cells */,
 				4C18605A2AA4AAC90066CFAE /* Common */,
 				4C18604E2AA47CBA0066CFAE /* ViewController.swift */,
 				4C18604B2AA47CA10066CFAE /* Extensions */,
@@ -204,6 +262,11 @@
 			isa = PBXGroup;
 			children = (
 				4C18604C2AA47CB40066CFAE /* NSWindow+Extension.swift */,
+				4C18608C2AA4F5EA0066CFAE /* NSTableView+Extension.swift */,
+				4C1860A12AA50E300066CFAE /* NSScrollView+Extension.swift */,
+				4C1860AC2AA59D780066CFAE /* NSImage+Extension.swift */,
+				4C1860B92AA607740066CFAE /* NSView+Extension.swift */,
+				4C1860BB2AA60D790066CFAE /* CGFloat+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -255,14 +318,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		4C1860732AA4C37E0066CFAE /* TableAdapter */ = {
-			isa = PBXGroup;
-			children = (
-				4C1860742AA4C38C0066CFAE /* TableItem.swift */,
-			);
-			path = TableAdapter;
-			sourceTree = "<group>";
-		};
 		4C1860762AA4C3E70066CFAE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +329,7 @@
 		4C1860772AA4DBD20066CFAE /* Units */ = {
 			isa = PBXGroup;
 			children = (
+				4C1860C02AA612ED0066CFAE /* Backlog */,
 				4C1860782AA4DBD90066CFAE /* Navigation */,
 			);
 			path = Units;
@@ -310,6 +366,111 @@
 				4C18607E2AA4DC5C0066CFAE /* StateProviderMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4C1860842AA4EEFF0066CFAE /* Backlog */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860BF2AA610D60066CFAE /* ViewModels */,
+				4C1860982AA50CAB0066CFAE /* View */,
+				4C1860852AA4EF1C0066CFAE /* BacklogUnitAssembly.swift */,
+				4C1860872AA4EF7A0066CFAE /* BacklogUnitPresenter.swift */,
+				4C1860BD2AA610B80066CFAE /* BacklogUnitInteractor.swift */,
+			);
+			path = Backlog;
+			sourceTree = "<group>";
+		};
+		4C18608E2AA4F7990066CFAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C18608F2AA4F7B40066CFAE /* BacklogItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C1860912AA4F93D0066CFAE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860922AA4F9490066CFAE /* TextCell.swift */,
+				4C1860942AA4F9530066CFAE /* TextItem.swift */,
+				4C1860A82AA519060066CFAE /* ToggleCell.swift */,
+				4C1860AA2AA519130066CFAE /* ToggleItem.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4C1860982AA50CAB0066CFAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860A32AA50FDE0066CFAE /* Protocols */,
+				4C1860892AA4F2330066CFAE /* BacklogUnitView.swift */,
+				4C1860992AA50CD10066CFAE /* BacklogUnitView+TableDelegate.swift */,
+				4C18609B2AA50D000066CFAE /* BacklogUnitView+DataSource.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C1860A32AA50FDE0066CFAE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4C18609F2AA50DAF0066CFAE /* BacklogView.swift */,
+				4C18609D2AA50D930066CFAE /* BacklogViewOutput.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4C1860AE2AA5AF5E0066CFAE /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860AF2AA5AF940066CFAE /* ConfigurableMenu.swift */,
+				4C1860B12AA5AFC70066CFAE /* MenuConfiguration.swift */,
+				4C1860B32AA5AFED0066CFAE /* MenuItemConfiguration.swift */,
+				4C1860B52AA5B00A0066CFAE /* ConfigurableMenuItem.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		4C1860BF2AA610D60066CFAE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860B72AA601820066CFAE /* BacklogRowModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C1860C02AA612ED0066CFAE /* Backlog */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860C12AA612F80066CFAE /* Mocks */,
+				4C1860C22AA612FE0066CFAE /* Tests */,
+			);
+			path = Backlog;
+			sourceTree = "<group>";
+		};
+		4C1860C12AA612F80066CFAE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860C32AA6131A0066CFAE /* BacklogViewMock.swift */,
+				4C1860C72AA614710066CFAE /* BacklogInteractorMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4C1860C22AA612FE0066CFAE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860C52AA613960066CFAE /* BacklogUnitPresenterTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4C1860C92AA616310066CFAE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860CA2AA616440066CFAE /* UUID+Extension.swift */,
+				4C1860CC2AA616640066CFAE /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,21 +603,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1860A92AA519060066CFAE /* ToggleCell.swift in Sources */,
+				4C1860902AA4F7B40066CFAE /* BacklogItem.swift in Sources */,
+				4C1860952AA4F9530066CFAE /* TextItem.swift in Sources */,
 				4C1860582AA492780066CFAE /* NavigationUnitView.swift in Sources */,
+				4C1860B02AA5AF940066CFAE /* ConfigurableMenu.swift in Sources */,
+				4C1860862AA4EF1C0066CFAE /* BacklogUnitAssembly.swift in Sources */,
+				4C1860B22AA5AFC70066CFAE /* MenuConfiguration.swift in Sources */,
+				4C1860AD2AA59D780066CFAE /* NSImage+Extension.swift in Sources */,
+				4C18608D2AA4F5EA0066CFAE /* NSTableView+Extension.swift in Sources */,
+				4C1860B82AA601820066CFAE /* BacklogRowModel.swift in Sources */,
+				4C1860AB2AA519130066CFAE /* ToggleItem.swift in Sources */,
+				4C1860A22AA50E300066CFAE /* NSScrollView+Extension.swift in Sources */,
 				4C18601A2AA47BE70066CFAE /* Board.xcdatamodeld in Sources */,
 				4C1860722AA4C13D0066CFAE /* StateProvider.swift in Sources */,
+				4C1860B42AA5AFED0066CFAE /* MenuItemConfiguration.swift in Sources */,
+				4C1860BE2AA610B80066CFAE /* BacklogUnitInteractor.swift in Sources */,
 				4C18604A2AA47C9B0066CFAE /* AppRouter.swift in Sources */,
 				4C1860702AA4C0EA0066CFAE /* AppState.swift in Sources */,
-				4C1860752AA4C38C0066CFAE /* TableItem.swift in Sources */,
+				4C1860882AA4EF7A0066CFAE /* BacklogUnitPresenter.swift in Sources */,
+				4C18608A2AA4F2330066CFAE /* BacklogUnitView.swift in Sources */,
 				4C1860692AA4BAA90066CFAE /* ViewOutput.swift in Sources */,
 				4C18605E2AA4AAF90066CFAE /* ViewConfiguration.swift in Sources */,
 				4C18604D2AA47CB40066CFAE /* NSWindow+Extension.swift in Sources */,
 				4C1860522AA47D6F0066CFAE /* NavigationUnitAssembly.swift in Sources */,
+				4C18609E2AA50D930066CFAE /* BacklogViewOutput.swift in Sources */,
+				4C1860B62AA5B00A0066CFAE /* ConfigurableMenuItem.swift in Sources */,
 				4C1860472AA47C6D0066CFAE /* AppCoordinator.swift in Sources */,
+				4C1860BC2AA60D790066CFAE /* CGFloat+Extension.swift in Sources */,
 				4C1860432AA47C100066CFAE /* main.swift in Sources */,
 				4C1860622AA4ACD50066CFAE /* LabelView.swift in Sources */,
 				4C18604F2AA47CBA0066CFAE /* ViewController.swift in Sources */,
 				4C18605C2AA4AAD80066CFAE /* ConfigurableView.swift in Sources */,
+				4C1860932AA4F9490066CFAE /* TextCell.swift in Sources */,
+				4C18609A2AA50CD10066CFAE /* BacklogUnitView+TableDelegate.swift in Sources */,
+				4C18609C2AA50D000066CFAE /* BacklogUnitView+DataSource.swift in Sources */,
+				4C1860BA2AA607740066CFAE /* NSView+Extension.swift in Sources */,
+				4C1860A02AA50DAF0066CFAE /* BacklogView.swift in Sources */,
 				4C1860562AA48EA10066CFAE /* NavigationUnitPresenter.swift in Sources */,
 				4C1860152AA47BE70066CFAE /* AppDelegate.swift in Sources */,
 				4C1860672AA4B8E30066CFAE /* NavigationItem.swift in Sources */,
@@ -469,9 +652,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1860C82AA614710066CFAE /* BacklogInteractorMock.swift in Sources */,
+				4C1860CD2AA616640066CFAE /* String+Extension.swift in Sources */,
 				4C1860832AA4E7EE0066CFAE /* NavigationViewMock.swift in Sources */,
+				4C1860C42AA6131A0066CFAE /* BacklogViewMock.swift in Sources */,
+				4C1860C62AA613960066CFAE /* BacklogUnitPresenterTests.swift in Sources */,
 				4C18607F2AA4DC5C0066CFAE /* StateProviderMock.swift in Sources */,
 				4C18607C2AA4DC0E0066CFAE /* NavigationUnitPresenterTests.swift in Sources */,
+				4C1860CB2AA616440066CFAE /* UUID+Extension.swift in Sources */,
 				4C18602A2AA47BE80066CFAE /* BoardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

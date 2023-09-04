@@ -11,6 +11,8 @@ protocol ConfigurableView: NSView {
 
 	associatedtype Configuration
 
+	static var reuseIdentifier: String { get }
+
 	/// Basic initialization
 	///
 	/// - Parameters:

@@ -8,7 +8,7 @@
 import Cocoa
 
 /// Configuration of the label
-struct LabelConfig: TableItem {
+struct LabelConfig: ViewConfiguration {
 
 	typealias View = LabelView
 
