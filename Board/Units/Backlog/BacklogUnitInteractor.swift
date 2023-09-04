@@ -11,5 +11,37 @@ import Foundation
 protocol BacklogInteractor {
 
 	/// Fetch data
-	func fetchData(completionHandler: ([BacklogItem]) -> Void) throws
+	func invalidateData()
+}
+
+final class BacklogUnitInteractor {
+
+	weak var presenter: BacklogPresenter?
+
+	var dataProvider: DataProvider
+
+	var dataStorage: DataStorage
+
+	// MARK: - Initialization
+
+	init(dataProvider: DataProvider, dataStorage: DataStorage) {
+		self.dataProvider = dataProvider
+		self.dataStorage = dataStorage
+	}
+}
+
+// MARK: - BacklogInteractor
+extension BacklogUnitInteractor: BacklogInteractor {
+
+	func invalidateData() {
+		dataProvider.addObserver(self)
+	}
+}
+
+// MARK: - DataObserver
+extension BacklogUnitInteractor: DataObserver {
+
+	func providerDidChange(_ items: [TaskItem]) {
+		presenter?.present(items)
+	}
 }

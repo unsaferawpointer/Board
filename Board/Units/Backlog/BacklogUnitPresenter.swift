@@ -7,9 +7,9 @@
 
 import Foundation
 
-protocol BacklogPresenter {
+protocol BacklogPresenter: AnyObject {
 
-	func present(_ items: [BacklogItem])
+	func present(_ items: [TaskItem])
 }
 
 final class BacklogUnitPresenter {
@@ -36,7 +36,7 @@ final class BacklogUnitPresenter {
 // MARK: - BacklogPresenter
 extension BacklogUnitPresenter: BacklogPresenter {
 
-	func present(_ items: [BacklogItem]) {
+	func present(_ items: [TaskItem]) {
 		let models = makeModels(from: items)
 		view?.display(models)
 	}
@@ -49,13 +49,7 @@ extension BacklogUnitPresenter: BacklogViewOutput {
 		guard case .viewDidLoad = newState, let interactor else {
 			return
 		}
-		do {
-			try interactor.fetchData { [weak self] items in
-				self?.present(items)
-			}
-		} catch {
-			// TODO: - Handle errors
-		}
+		interactor.invalidateData()
 	}
 
 	func fieldDidChange(description: String, forId id: UUID) {
@@ -70,7 +64,7 @@ extension BacklogUnitPresenter: BacklogViewOutput {
 // MARK: - Helpers
 private extension BacklogUnitPresenter {
 
-	func makeModels(from items: [BacklogItem]) -> [BacklogRowModel] {
+	func makeModels(from items: [TaskItem]) -> [BacklogRowModel] {
 		return items.map {
 			BacklogRowModel(
 				id: $0.uuid,

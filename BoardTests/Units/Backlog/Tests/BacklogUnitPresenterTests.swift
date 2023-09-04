@@ -40,8 +40,8 @@ extension BacklogUnitPresenterTests {
 	func test_viewControllerDidChangeState_whenStateIsViewDidLoad() {
 		// Arrange
 
-		let item0 = BacklogItem(uuid: .random, text: .random, estimation: 0, isUrgent: false)
-		let item1 = BacklogItem(uuid: .random, text: .random, estimation: 7, isUrgent: true)
+		let item0 = TaskItem(uuid: .random, text: .random, estimation: 0, isUrgent: false)
+		let item1 = TaskItem(uuid: .random, text: .random, estimation: 7, isUrgent: true)
 
 		interactor.stubs.fetchData = [item0, item1]
 
@@ -63,8 +63,8 @@ extension BacklogUnitPresenterTests {
 	func test_present() {
 		// Arrange
 
-		let item0 = BacklogItem(uuid: .random, text: .random, estimation: 0, isUrgent: false)
-		let item1 = BacklogItem(uuid: .random, text: .random, estimation: 7, isUrgent: true)
+		let item0 = TaskItem(uuid: .random, text: .random, estimation: 0, isUrgent: false)
+		let item1 = TaskItem(uuid: .random, text: .random, estimation: 7, isUrgent: true)
 
 		// Act
 		sut.present([item0, item1])

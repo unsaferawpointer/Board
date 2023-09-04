@@ -19,7 +19,7 @@ final class BacklogInteractorMock {
 // MARK: - BacklogInteractor
 extension BacklogInteractorMock: BacklogInteractor {
 
-	func fetchData(completionHandler: ([BacklogItem]) -> Void) throws {
+	func fetchData(completionHandler: ([TaskItem]) -> Void) throws {
 		if let error = errors.fetchData {
 			throw error
 		}
@@ -35,7 +35,7 @@ extension BacklogInteractorMock {
 	}
 
 	struct Stubs {
-		var fetchData: [BacklogItem] = []
+		var fetchData: [TaskItem] = []
 	}
 
 	struct ErrorStubs {

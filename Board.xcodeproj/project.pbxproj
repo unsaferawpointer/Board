@@ -38,7 +38,7 @@
 		4C1860882AA4EF7A0066CFAE /* BacklogUnitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860872AA4EF7A0066CFAE /* BacklogUnitPresenter.swift */; };
 		4C18608A2AA4F2330066CFAE /* BacklogUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860892AA4F2330066CFAE /* BacklogUnitView.swift */; };
 		4C18608D2AA4F5EA0066CFAE /* NSTableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18608C2AA4F5EA0066CFAE /* NSTableView+Extension.swift */; };
-		4C1860902AA4F7B40066CFAE /* BacklogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18608F2AA4F7B40066CFAE /* BacklogItem.swift */; };
+		4C1860902AA4F7B40066CFAE /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18608F2AA4F7B40066CFAE /* TaskItem.swift */; };
 		4C1860932AA4F9490066CFAE /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860922AA4F9490066CFAE /* TextCell.swift */; };
 		4C1860952AA4F9530066CFAE /* TextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860942AA4F9530066CFAE /* TextItem.swift */; };
 		4C18609A2AA50CD10066CFAE /* BacklogUnitView+TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860992AA50CD10066CFAE /* BacklogUnitView+TableDelegate.swift */; };
@@ -62,6 +62,15 @@
 		4C1860C82AA614710066CFAE /* BacklogInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860C72AA614710066CFAE /* BacklogInteractorMock.swift */; };
 		4C1860CB2AA616440066CFAE /* UUID+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860CA2AA616440066CFAE /* UUID+Extension.swift */; };
 		4C1860CD2AA616640066CFAE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1860CC2AA616640066CFAE /* String+Extension.swift */; };
+		4C807D382AA62EE500FF57F7 /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D362AA62EE500FF57F7 /* TaskEntity+CoreDataClass.swift */; };
+		4C807D392AA62EE500FF57F7 /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D372AA62EE500FF57F7 /* TaskEntity+CoreDataProperties.swift */; };
+		4C807D3D2AA6304200FF57F7 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D3C2AA6304200FF57F7 /* DataProvider.swift */; };
+		4C807D3F2AA6306E00FF57F7 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D3E2AA6306E00FF57F7 /* DataStorage.swift */; };
+		4C807D432AA634A200FF57F7 /* CDStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D422AA634A200FF57F7 /* CDStorage.swift */; };
+		4C807D462AA6351500FF57F7 /* ItemRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D452AA6351500FF57F7 /* ItemRepresentable.swift */; };
+		4C807D482AA638F700FF57F7 /* CDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D472AA638F700FF57F7 /* CDProvider.swift */; };
+		4C807D4A2AA6404B00FF57F7 /* CDContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D492AA6404B00FF57F7 /* CDContainer.swift */; };
+		4C807D4C2AA6430400FF57F7 /* DataObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D4B2AA6430400FF57F7 /* DataObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,7 +126,7 @@
 		4C1860872AA4EF7A0066CFAE /* BacklogUnitPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogUnitPresenter.swift; sourceTree = "<group>"; };
 		4C1860892AA4F2330066CFAE /* BacklogUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogUnitView.swift; sourceTree = "<group>"; };
 		4C18608C2AA4F5EA0066CFAE /* NSTableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+Extension.swift"; sourceTree = "<group>"; };
-		4C18608F2AA4F7B40066CFAE /* BacklogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogItem.swift; sourceTree = "<group>"; };
+		4C18608F2AA4F7B40066CFAE /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		4C1860922AA4F9490066CFAE /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		4C1860942AA4F9530066CFAE /* TextItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextItem.swift; sourceTree = "<group>"; };
 		4C1860992AA50CD10066CFAE /* BacklogUnitView+TableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BacklogUnitView+TableDelegate.swift"; sourceTree = "<group>"; };
@@ -141,6 +150,15 @@
 		4C1860C72AA614710066CFAE /* BacklogInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogInteractorMock.swift; sourceTree = "<group>"; };
 		4C1860CA2AA616440066CFAE /* UUID+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUID+Extension.swift"; sourceTree = "<group>"; };
 		4C1860CC2AA616640066CFAE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		4C807D362AA62EE500FF57F7 /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C807D372AA62EE500FF57F7 /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4C807D3C2AA6304200FF57F7 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		4C807D3E2AA6306E00FF57F7 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		4C807D422AA634A200FF57F7 /* CDStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDStorage.swift; sourceTree = "<group>"; };
+		4C807D452AA6351500FF57F7 /* ItemRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepresentable.swift; sourceTree = "<group>"; };
+		4C807D472AA638F700FF57F7 /* CDProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDProvider.swift; sourceTree = "<group>"; };
+		4C807D492AA6404B00FF57F7 /* CDContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDContainer.swift; sourceTree = "<group>"; };
+		4C807D4B2AA6430400FF57F7 /* DataObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,9 +213,9 @@
 				4C1860202AA47BE80066CFAE /* Board.entitlements */,
 				4C18601D2AA47BE80066CFAE /* Main.storyboard */,
 				4C18601B2AA47BE80066CFAE /* Assets.xcassets */,
-				4C1860182AA47BE70066CFAE /* Board.xcdatamodeld */,
 				4C18606C2AA4C0B10066CFAE /* Common */,
 				4C18608E2AA4F7990066CFAE /* Models */,
+				4C807D342AA6260600FF57F7 /* Services */,
 				4C1860442AA47C480066CFAE /* Units */,
 				4C1860482AA47C7E0066CFAE /* DesignSystem */,
 			);
@@ -383,7 +401,7 @@
 		4C18608E2AA4F7990066CFAE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4C18608F2AA4F7B40066CFAE /* BacklogItem.swift */,
+				4C18608F2AA4F7B40066CFAE /* TaskItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -471,6 +489,55 @@
 				4C1860CC2AA616640066CFAE /* String+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C807D342AA6260600FF57F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C807D3B2AA6303300FF57F7 /* Protocols */,
+				4C807D352AA6261600FF57F7 /* CoreData */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C807D352AA6261600FF57F7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4C1860182AA47BE70066CFAE /* Board.xcdatamodeld */,
+				4C807D492AA6404B00FF57F7 /* CDContainer.swift */,
+				4C807D422AA634A200FF57F7 /* CDStorage.swift */,
+				4C807D472AA638F700FF57F7 /* CDProvider.swift */,
+				4C807D442AA634F900FF57F7 /* Protocols */,
+				4C807D3A2AA62EEB00FF57F7 /* Entities */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4C807D3A2AA62EEB00FF57F7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4C807D362AA62EE500FF57F7 /* TaskEntity+CoreDataClass.swift */,
+				4C807D372AA62EE500FF57F7 /* TaskEntity+CoreDataProperties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4C807D3B2AA6303300FF57F7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4C807D3C2AA6304200FF57F7 /* DataProvider.swift */,
+				4C807D3E2AA6306E00FF57F7 /* DataStorage.swift */,
+				4C807D4B2AA6430400FF57F7 /* DataObserver.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4C807D442AA634F900FF57F7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4C807D452AA6351500FF57F7 /* ItemRepresentable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -604,12 +671,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1860A92AA519060066CFAE /* ToggleCell.swift in Sources */,
-				4C1860902AA4F7B40066CFAE /* BacklogItem.swift in Sources */,
+				4C1860902AA4F7B40066CFAE /* TaskItem.swift in Sources */,
+				4C807D462AA6351500FF57F7 /* ItemRepresentable.swift in Sources */,
 				4C1860952AA4F9530066CFAE /* TextItem.swift in Sources */,
 				4C1860582AA492780066CFAE /* NavigationUnitView.swift in Sources */,
 				4C1860B02AA5AF940066CFAE /* ConfigurableMenu.swift in Sources */,
 				4C1860862AA4EF1C0066CFAE /* BacklogUnitAssembly.swift in Sources */,
+				4C807D432AA634A200FF57F7 /* CDStorage.swift in Sources */,
 				4C1860B22AA5AFC70066CFAE /* MenuConfiguration.swift in Sources */,
+				4C807D3F2AA6306E00FF57F7 /* DataStorage.swift in Sources */,
 				4C1860AD2AA59D780066CFAE /* NSImage+Extension.swift in Sources */,
 				4C18608D2AA4F5EA0066CFAE /* NSTableView+Extension.swift in Sources */,
 				4C1860B82AA601820066CFAE /* BacklogRowModel.swift in Sources */,
@@ -617,6 +687,9 @@
 				4C1860A22AA50E300066CFAE /* NSScrollView+Extension.swift in Sources */,
 				4C18601A2AA47BE70066CFAE /* Board.xcdatamodeld in Sources */,
 				4C1860722AA4C13D0066CFAE /* StateProvider.swift in Sources */,
+				4C807D4A2AA6404B00FF57F7 /* CDContainer.swift in Sources */,
+				4C807D482AA638F700FF57F7 /* CDProvider.swift in Sources */,
+				4C807D382AA62EE500FF57F7 /* TaskEntity+CoreDataClass.swift in Sources */,
 				4C1860B42AA5AFED0066CFAE /* MenuItemConfiguration.swift in Sources */,
 				4C1860BE2AA610B80066CFAE /* BacklogUnitInteractor.swift in Sources */,
 				4C18604A2AA47C9B0066CFAE /* AppRouter.swift in Sources */,
@@ -638,11 +711,14 @@
 				4C1860932AA4F9490066CFAE /* TextCell.swift in Sources */,
 				4C18609A2AA50CD10066CFAE /* BacklogUnitView+TableDelegate.swift in Sources */,
 				4C18609C2AA50D000066CFAE /* BacklogUnitView+DataSource.swift in Sources */,
+				4C807D4C2AA6430400FF57F7 /* DataObserver.swift in Sources */,
 				4C1860BA2AA607740066CFAE /* NSView+Extension.swift in Sources */,
+				4C807D392AA62EE500FF57F7 /* TaskEntity+CoreDataProperties.swift in Sources */,
 				4C1860A02AA50DAF0066CFAE /* BacklogView.swift in Sources */,
 				4C1860562AA48EA10066CFAE /* NavigationUnitPresenter.swift in Sources */,
 				4C1860152AA47BE70066CFAE /* AppDelegate.swift in Sources */,
 				4C1860672AA4B8E30066CFAE /* NavigationItem.swift in Sources */,
+				4C807D3D2AA6304200FF57F7 /* DataProvider.swift in Sources */,
 				4C1860642AA4ACF40066CFAE /* LabelConfig.swift in Sources */,
 				4C18606E2AA4C0CB0066CFAE /* AppStateProvider.swift in Sources */,
 			);

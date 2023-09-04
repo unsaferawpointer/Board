@@ -21,6 +21,10 @@ final class AppCoordinator {
 
 	private (set) var stateProvider = AppStateProvider()
 
+	private (set) var dataProvider = CDProvider(context: CDContainer.shared.сontext)
+
+	private (set) var dataStorage = CDStorage(context: CDContainer.shared.сontext)
+
 	// MARK: - Initialization
 
 	/// Basic initialization
@@ -48,7 +52,12 @@ private extension AppCoordinator {
 
 	func presentedDetailController(for item: NavigationItem) -> NSViewController {
 		switch item {
-		case .backlog: 		return BacklogUnitAssembly.build(stateProvider: stateProvider)
+		case .backlog:
+			return BacklogUnitAssembly.build(
+				stateProvider: stateProvider,
+				dataProvider: dataProvider,
+				dataStorage: dataStorage
+			)
 		case .board: 		return ViewController(text: "Board")
 		}
 	}
