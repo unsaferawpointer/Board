@@ -13,5 +13,7 @@ protocol DataStorage {
 	
 	func insertTask(_ item: TaskItem)
 	
-	func updateTask(withId id: UUID, _ block: (inout TaskItem) -> Void) throws
+	func deleteTasks(_ ids: [UUID]) throws
+	
+	func updateTasks(withIds ids: [UUID], _ block: (inout TaskItem) -> Void) throws
 }

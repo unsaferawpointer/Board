@@ -29,14 +29,25 @@ extension CDStorage: DataStorage {
 	func insertTask(_ item: TaskItem) {
 		_ = TaskEntity(from: item, context: context)
 	}
-	
-	func updateTask(withId id: UUID, _ block: (inout TaskItem) -> Void) throws {
-		guard let entity = try fetchEntity(ofType: TaskEntity.self, withIdentifier: id) else {
-			return
+
+	func deleteTasks(_ ids: [UUID]) throws {
+		for id in ids {
+			guard let entity = try fetchEntity(ofType: TaskEntity.self, withIdentifier: id) else {
+				continue
+			}
+			context.delete(entity)
 		}
-		var item = entity.item
-		block(&item)
-		entity.update(by: item)
+	}
+
+	func updateTasks(withIds ids: [UUID], _ block: (inout TaskItem) -> Void) throws {
+		for id in ids {
+			guard let entity = try fetchEntity(ofType: TaskEntity.self, withIdentifier: id) else {
+				continue
+			}
+			var item = entity.item
+			block(&item)
+			entity.update(by: item)
+		}
 	}
 
 	// MARK: - Common

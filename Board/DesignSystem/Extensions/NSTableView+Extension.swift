@@ -83,6 +83,21 @@ extension NSTableView.ColumnStyle {
 	}
 }
 
+extension NSTableView {
+	
+	func effectiveSelection() -> IndexSet {
+		if clickedRow != -1 {
+			if selectedRowIndexes.contains(clickedRow) {
+				return selectedRowIndexes
+			} else {
+				return IndexSet(integer: clickedRow)
+			}
+		} else {
+			return selectedRowIndexes
+		}
+	}
+}
+
 // MARK: - Animations
 extension NSTableView {
 

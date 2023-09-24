@@ -81,6 +81,8 @@ private extension BacklogUnitView {
 
 		table.dataSource = self
 		table.delegate = self
+
+		table.menu = makeMenu()
 	}
 }
 
@@ -104,11 +106,87 @@ extension BacklogUnitView: ToolbarSupportable {
 	}
 }
 
+private extension BacklogUnitView {
+	
+	func makeMenu() -> NSMenu {
+		let menu: NSMenu = {
+			
+			let menu = NSMenu()
+			
+			menu.addItem(withTitle: "Set estimation", action: nil, keyEquivalent: "\r")
+			menu.items.last?.submenu = NSMenu()
+			
+			for number in [0, 1, 2, 3, 5, 8, 13, 21, 33, 54] {
+				menu.items.last?.submenu?.addItem(
+					withTitle: "\(number) sp",
+					action: #selector(setEstimation(_:)),
+					keyEquivalent: ""
+				)
+				menu.items.last?.submenu?.items.last?.tag = number
+			}
+			
+			menu.addItem(.separator())
+
+			menu.addItem(withTitle: "Mark as urgent", action: #selector(markAsUrgent(_:)), keyEquivalent: "")
+			menu.addItem(withTitle: "Mark as non-urgent", action: #selector(markAsNonUrgent(_:)), keyEquivalent: "")
+			
+			menu.addItem(.separator())
+			
+			menu.addItem(withTitle: "Delete", action: #selector(delete(_:)), keyEquivalent: "\u{0008}")
+			menu.items.last?.image = NSImage(symbolName: "trash")
+			
+			return menu
+		}()
+		return menu
+	}
+}
+
+// MARK: - Actions
 extension BacklogUnitView {
 
 	@objc
 	func newTask(_ sender: Any) {
 		output?.buttonToCreateHasBeenClicked()
+	}
+	
+	@objc
+	func delete(_ sender: Any) {
+		let selected = table.effectiveSelection().map { row in
+			models[row].id
+		}
+		output?.menuItemToDeleteHasBeenClicked(for: selected)
+	}
+	
+	@objc
+	func markAsUrgent(_ sender: Any) {
+		let selected = table.effectiveSelection().map { row in
+			models[row].id
+		}
+		output?.menuItemToMarkUrgentHasBeenClicked(for: selected)
+	}
+	
+	@objc
+	func markAsNonUrgent(_ sender: Any) {
+		let selected = table.effectiveSelection().map { row in
+			models[row].id
+		}
+		output?.menuItemToMarkNonUrgentHasBeenClicked(for: selected)
+	}
+	
+	@objc
+	func setEstimation(_ sender: NSMenuItem) {
+		let estimation = sender.tag
+		let selected = table.effectiveSelection().map { row in
+			models[row].id
+		}
+		output?.menuItemToSetEstimationHasBeenClicked(estimation: estimation, for: selected)
+	}
+}
+
+extension BacklogUnitView: NSMenuItemValidation {
+
+	func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
+		return true
 	}
 }
 

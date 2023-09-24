@@ -57,11 +57,27 @@ extension BacklogUnitPresenter: BacklogViewOutput {
 	}
 
 	func fieldDidChange(urgentFlag: Bool, forId id: UUID) {
-		interactor?.setUrgentFlag(urgentFlag, forTask: id)
+		interactor?.setUrgentFlag(urgentFlag, forTasks: [id])
 	}
 	
 	func buttonToCreateHasBeenClicked() {
 		interactor?.createTask(withText: "New Task")
+	}
+
+	func menuItemToDeleteHasBeenClicked(for ids: [UUID]) {
+		interactor?.deleteTasks(ids)
+	}
+	
+	func menuItemToMarkUrgentHasBeenClicked(for ids: [UUID]) {
+		interactor?.setUrgentFlag(true, forTasks: ids)
+	}
+	
+	func menuItemToMarkNonUrgentHasBeenClicked(for ids: [UUID]) {
+		interactor?.setUrgentFlag(false, forTasks: ids)
+	}
+	
+	func menuItemToSetEstimationHasBeenClicked(estimation: Int, for ids: [UUID]) {
+		interactor?.setEstimation(estimation, forTasks: ids)
 	}
 }
 

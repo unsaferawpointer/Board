@@ -14,4 +14,12 @@ protocol BacklogViewOutput: ViewOutput {
 	func fieldDidChange(urgentFlag: Bool, forId id: UUID)
 	
 	func buttonToCreateHasBeenClicked()
+	
+	func menuItemToDeleteHasBeenClicked(for ids: [UUID])
+	
+	func menuItemToMarkUrgentHasBeenClicked(for ids: [UUID])
+	
+	func menuItemToMarkNonUrgentHasBeenClicked(for ids: [UUID])
+	
+	func menuItemToSetEstimationHasBeenClicked(estimation: Int, for ids: [UUID])
 }
