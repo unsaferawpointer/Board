@@ -71,6 +71,7 @@
 		4C807D482AA638F700FF57F7 /* CDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D472AA638F700FF57F7 /* CDProvider.swift */; };
 		4C807D4A2AA6404B00FF57F7 /* CDContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D492AA6404B00FF57F7 /* CDContainer.swift */; };
 		4C807D4C2AA6430400FF57F7 /* DataObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D4B2AA6430400FF57F7 /* DataObserver.swift */; };
+		4C807D4E2AA6497400FF57F7 /* ToolbarSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D4D2AA6497400FF57F7 /* ToolbarSupportable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,7 @@
 		4C807D472AA638F700FF57F7 /* CDProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDProvider.swift; sourceTree = "<group>"; };
 		4C807D492AA6404B00FF57F7 /* CDContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDContainer.swift; sourceTree = "<group>"; };
 		4C807D4B2AA6430400FF57F7 /* DataObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObserver.swift; sourceTree = "<group>"; };
+		4C807D4D2AA6497400FF57F7 /* ToolbarSupportable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarSupportable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +309,7 @@
 				4C1860682AA4BAA90066CFAE /* ViewOutput.swift */,
 				4C18605B2AA4AAD80066CFAE /* ConfigurableView.swift */,
 				4C18605D2AA4AAF90066CFAE /* ViewConfiguration.swift */,
+				4C807D4D2AA6497400FF57F7 /* ToolbarSupportable.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -713,6 +716,7 @@
 				4C18609C2AA50D000066CFAE /* BacklogUnitView+DataSource.swift in Sources */,
 				4C807D4C2AA6430400FF57F7 /* DataObserver.swift in Sources */,
 				4C1860BA2AA607740066CFAE /* NSView+Extension.swift in Sources */,
+				4C807D4E2AA6497400FF57F7 /* ToolbarSupportable.swift in Sources */,
 				4C807D392AA62EE500FF57F7 /* TaskEntity+CoreDataProperties.swift in Sources */,
 				4C1860A02AA50DAF0066CFAE /* BacklogView.swift in Sources */,
 				4C1860562AA48EA10066CFAE /* NavigationUnitPresenter.swift in Sources */,

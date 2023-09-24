@@ -79,6 +79,34 @@ private extension BacklogUnitView {
 	}
 }
 
+// MARK: - ToolbarSupportable
+extension BacklogUnitView: ToolbarSupportable {
+
+	func makeToolbarItems() -> [NSToolbarItem] {
+		return [
+			NSToolbarItem(itemIdentifier: .init(rawValue: "newObject")).configure {
+				$0.isNavigational = false
+				$0.visibilityPriority = .high
+				$0.view = NSButton().configure {
+					$0.bezelStyle = .texturedRounded
+					$0.image = NSImage(systemSymbolName: "plus", accessibilityDescription: nil)
+					$0.target = nil
+					$0.action = #selector(newTask(_:))
+				}
+				$0.action = #selector(newTask(_:))
+			}
+		]
+	}
+}
+
+extension BacklogUnitView {
+
+	@objc
+	func newTask(_ sender: Any) {
+		print(#function)
+	}
+}
+
 // MARK: - Columns identifiers
 extension NSUserInterfaceItemIdentifier {
 
@@ -86,3 +114,14 @@ extension NSUserInterfaceItemIdentifier {
 	static let estimation = NSUserInterfaceItemIdentifier("estimation")
 	static let isUrgent = NSUserInterfaceItemIdentifier("isUrgent")
 }
+
+protocol Configurable: AnyObject { }
+
+extension Configurable {
+	func configure(_ block: (Self) -> Void) -> Self {
+		block(self)
+		return self
+	}
+}
+
+extension NSObject: Configurable { }

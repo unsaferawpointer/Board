@@ -25,12 +25,15 @@ final class AppRouter: NSObject {
 
 	// MARK: - UI-Properties
 
+	private var toolbarItems: [NSToolbarItem] = []
+
 	private var mainWindow: NSWindow
 
 	lazy private var toolbar: NSToolbar = {
 		let toolbar = NSToolbar(identifier: "toolbar")
 		toolbar.sizeMode = .regular
 		toolbar.displayMode = .iconOnly
+		toolbar.delegate = self
 		return toolbar
 	}()
 
@@ -44,6 +47,7 @@ final class AppRouter: NSObject {
 	override init() {
 		self.mainWindow = NSWindow.makeDefault()
 		super.init()
+		mainWindow.toolbar = toolbar
 	}
 }
 
@@ -98,6 +102,55 @@ private extension AppRouter {
 		let item = NSSplitViewItem(viewController: viewController)
 		item.allowsFullHeightLayout = true
 		item.titlebarSeparatorStyle = .automatic
+
+		if let toolbarSupportable = viewController as? ToolbarSupportable {
+			let items = toolbarSupportable.makeToolbarItems()
+			updateToolbarItems(newItems: items)
+		} else {
+			updateToolbarItems(newItems: [])
+		}
 		return item
+	}
+}
+
+// MARK: - NSToolbarDelegate
+extension AppRouter: NSToolbarDelegate {
+
+	func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
+		return toolbarItems.map(\.itemIdentifier)
+	}
+
+	func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
+		return toolbarItems.map(\.itemIdentifier)
+	}
+
+	func toolbar(_ toolbar: NSToolbar,
+				 itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier,
+				 willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
+		return toolbarItems.first { $0.itemIdentifier == itemIdentifier }
+	}
+}
+
+// MARK: - Toolbar support
+extension AppRouter {
+
+	private func updateToolbarItems(newItems: [NSToolbarItem]) {
+
+		guard let toolbar = mainWindow.toolbar else {
+			return
+		}
+		let difference = newItems.difference(from: toolbarItems) { new, old in
+			return new.itemIdentifier == old.itemIdentifier
+		}
+		for change in difference {
+			switch change {
+			case .remove(let offset, _, _):
+				toolbarItems.remove(at: offset)
+				toolbar.removeItem(at: offset)
+			case .insert(let offset, let item, _):
+				toolbarItems.insert(item, at: offset)
+				toolbar.insertItem(withItemIdentifier: item.itemIdentifier, at: offset)
+			}
+		}
 	}
 }
