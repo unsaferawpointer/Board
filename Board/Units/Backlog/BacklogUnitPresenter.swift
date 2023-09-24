@@ -53,11 +53,11 @@ extension BacklogUnitPresenter: BacklogViewOutput {
 	}
 
 	func fieldDidChange(description: String, forId id: UUID) {
-		// TODO: - Handle action
+		interactor?.setText(description, forTask: id)
 	}
 
 	func fieldDidChange(urgentFlag: Bool, forId id: UUID) {
-		// TODO: - Handle action
+		interactor?.setUrgentFlag(urgentFlag, forTask: id)
 	}
 	
 	func buttonToCreateHasBeenClicked() {

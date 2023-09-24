@@ -12,4 +12,6 @@ protocol DataStorage {
 	func save() throws
 	
 	func insertTask(_ item: TaskItem)
+	
+	func updateTask(withId id: UUID, _ block: (inout TaskItem) -> Void) throws
 }

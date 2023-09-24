@@ -14,6 +14,10 @@ protocol BacklogInteractor {
 	func invalidateData()
 	
 	func createTask(withText text: String)
+	
+	func setUrgentFlag(_ flag: Bool, forTask id: UUID)
+	
+	func setText(_ text: String, forTask id: UUID)
 }
 
 final class BacklogUnitInteractor {
@@ -42,6 +46,20 @@ extension BacklogUnitInteractor: BacklogInteractor {
 	func createTask(withText text: String) {
 		let new = TaskItem(text: text)
 		dataStorage.insertTask(new)
+		try? dataStorage.save()
+	}
+	
+	func setUrgentFlag(_ flag: Bool, forTask id: UUID) {
+		try? dataStorage.updateTask(withId: id) { item in
+			item.isUrgent = flag
+		}
+		try? dataStorage.save()
+	}
+	
+	func setText(_ text: String, forTask id: UUID) {
+		try? dataStorage.updateTask(withId: id) { item in
+			item.text = text
+		}
 		try? dataStorage.save()
 	}
 }

@@ -29,6 +29,15 @@ extension CDStorage: DataStorage {
 	func insertTask(_ item: TaskItem) {
 		_ = TaskEntity(from: item, context: context)
 	}
+	
+	func updateTask(withId id: UUID, _ block: (inout TaskItem) -> Void) throws {
+		guard let entity = try fetchEntity(ofType: TaskEntity.self, withIdentifier: id) else {
+			return
+		}
+		var item = entity.item
+		block(&item)
+		entity.update(by: item)
+	}
 
 	// MARK: - Common
 
@@ -37,5 +46,16 @@ extension CDStorage: DataStorage {
 			return
 		}
 		try context.save()
+	}
+}
+
+extension CDStorage {
+
+	func fetchEntity<T: NSManagedObject>(ofType type: T.Type, withIdentifier id: UUID) throws -> T? {
+		let request = type.fetchRequest()
+		request.predicate = NSPredicate(format: "uuid == %@", argumentArray: [id])
+		request.fetchLimit = 1
+		let entities = try context.fetch(request)
+		return entities.first as? T
 	}
 }
