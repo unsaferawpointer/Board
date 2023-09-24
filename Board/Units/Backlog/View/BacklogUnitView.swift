@@ -56,7 +56,7 @@ final class BacklogUnitView: NSViewController {
 extension BacklogUnitView: BacklogView {
 
 	func display(_ models: [BacklogRowModel]) {
-		self.models = models
+		self.models = (models as NSArray).sortedArray(using: table.sortDescriptors) as! [BacklogRowModel]
 		table.reloadData()
 	}
 }
@@ -71,8 +71,13 @@ private extension BacklogUnitView {
 		table.columnAutoresizingStyle = .sequentialColumnAutoresizingStyle
 
 		table.addColumn(.description, withTitle: "Description", style: .flexible(min: 120, max: nil))
+		table.tableColumns.last?.sortDescriptorPrototype = NSSortDescriptor(keyPath: \BacklogRowModel.text, ascending: true)
+		
 		table.addColumn(.estimation, withTitle: "Estimation", style: .flexible(min: 78, max: 78))
+		table.tableColumns.last?.sortDescriptorPrototype = NSSortDescriptor(keyPath: \BacklogRowModel.estimation, ascending: true)
+
 		table.addColumn(.isUrgent, withTitle: "􀋦", style: .toggle)
+		table.tableColumns.last?.sortDescriptorPrototype = NSSortDescriptor(keyPath: \BacklogRowModel.isUrgent, ascending: true)
 
 		table.dataSource = self
 		table.delegate = self

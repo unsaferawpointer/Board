@@ -7,13 +7,34 @@
 
 import Foundation
 
-struct BacklogRowModel: Equatable {
+final class BacklogRowModel: NSObject {
 
 	var id: UUID
+	
+	@objc
+	var timestamp: Date
 
-	var description: String
+	@objc
+	var text: String
 
+	@objc
 	var estimation: String
 
+	@objc
 	var isUrgent: Bool
+	
+	init(
+		id: UUID,
+		timestamp: Date,
+		text: String,
+		estimation: String,
+		isUrgent: Bool
+	) {
+		self.id = id
+		self.timestamp = timestamp
+		self.text = text
+		self.estimation = estimation
+		self.isUrgent = isUrgent
+		super.init()
+	}
 }

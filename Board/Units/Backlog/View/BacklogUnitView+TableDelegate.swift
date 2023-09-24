@@ -20,6 +20,12 @@ extension BacklogUnitView: NSTableViewDelegate {
 		}
 		return makeViewIfNeeded(tableView, configuration: configuration)
 	}
+
+	func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
+		self.models = (models as NSArray).sortedArray(using: tableView.sortDescriptors) as! [BacklogRowModel]
+		tableView.reloadData()
+	}
+
 }
 
 // MARK: - Helpers
@@ -41,7 +47,7 @@ private extension BacklogUnitView {
 	func makeConfiguration(_ item: BacklogRowModel, column: NSUserInterfaceItemIdentifier) -> (any ViewConfiguration)? {
 		switch column {
 		case .description:
-			return TextItem(text: item.description) { [weak self] newText in
+			return TextItem(text: item.text) { [weak self] newText in
 				self?.output?.fieldDidChange(description: newText, forId: item.id)
 			}
 		case .estimation:

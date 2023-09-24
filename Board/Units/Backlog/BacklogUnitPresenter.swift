@@ -71,8 +71,9 @@ private extension BacklogUnitPresenter {
 	func makeModels(from items: [TaskItem]) -> [BacklogRowModel] {
 		return items.map {
 			BacklogRowModel(
-				id: $0.uuid,
-				description: $0.text,
+				id: $0.uuid, 
+				timestamp: $0.creationDate,
+				text: $0.text,
 				estimation: $0.estimation != 0 ? "\($0.estimation) sp": "",
 				isUrgent: $0.isUrgent
 			)
