@@ -90,7 +90,7 @@ extension BacklogUnitView: ToolbarSupportable {
 				$0.view = NSButton().configure {
 					$0.bezelStyle = .texturedRounded
 					$0.image = NSImage(systemSymbolName: "plus", accessibilityDescription: nil)
-					$0.target = nil
+					$0.target = self
 					$0.action = #selector(newTask(_:))
 				}
 				$0.action = #selector(newTask(_:))
@@ -103,7 +103,7 @@ extension BacklogUnitView {
 
 	@objc
 	func newTask(_ sender: Any) {
-		print(#function)
+		output?.buttonToCreateHasBeenClicked()
 	}
 }
 

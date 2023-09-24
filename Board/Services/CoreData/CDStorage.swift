@@ -26,7 +26,7 @@ final class CDStorage {
 // MARK: - DataStorage
 extension CDStorage: DataStorage {
 
-	func addTask(_ item: TaskItem) throws {
+	func insertTask(_ item: TaskItem) {
 		_ = TaskEntity(from: item, context: context)
 	}
 

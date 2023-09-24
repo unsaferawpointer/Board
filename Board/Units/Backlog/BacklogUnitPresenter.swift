@@ -59,6 +59,10 @@ extension BacklogUnitPresenter: BacklogViewOutput {
 	func fieldDidChange(urgentFlag: Bool, forId id: UUID) {
 		// TODO: - Handle action
 	}
+	
+	func buttonToCreateHasBeenClicked() {
+		interactor?.createTask(withText: "New Task")
+	}
 }
 
 // MARK: - Helpers

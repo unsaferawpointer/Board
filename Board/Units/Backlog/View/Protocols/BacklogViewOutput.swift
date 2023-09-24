@@ -12,4 +12,6 @@ protocol BacklogViewOutput: ViewOutput {
 	func fieldDidChange(description: String, forId id: UUID)
 
 	func fieldDidChange(urgentFlag: Bool, forId id: UUID)
+	
+	func buttonToCreateHasBeenClicked()
 }

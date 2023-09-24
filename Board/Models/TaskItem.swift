@@ -28,7 +28,7 @@ struct TaskItem {
 	// MARK: - Initialization
 
 	init(
-		uuid: UUID,
+		uuid: UUID = UUID(),
 		creationDate: Date = Date(),
 		planningDate: Date? = nil,
 		beginngDate: Date? = nil,

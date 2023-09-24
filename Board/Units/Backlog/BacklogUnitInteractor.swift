@@ -12,6 +12,8 @@ protocol BacklogInteractor {
 
 	/// Fetch data
 	func invalidateData()
+	
+	func createTask(withText text: String)
 }
 
 final class BacklogUnitInteractor {
@@ -35,6 +37,12 @@ extension BacklogUnitInteractor: BacklogInteractor {
 
 	func invalidateData() {
 		dataProvider.addObserver(self)
+	}
+	
+	func createTask(withText text: String) {
+		let new = TaskItem(text: text)
+		dataStorage.insertTask(new)
+		try? dataStorage.save()
 	}
 }
 

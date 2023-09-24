@@ -10,4 +10,6 @@ import Foundation
 protocol DataStorage {
 
 	func save() throws
+	
+	func insertTask(_ item: TaskItem)
 }
