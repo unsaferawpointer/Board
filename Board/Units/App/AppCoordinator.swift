@@ -58,7 +58,8 @@ private extension AppCoordinator {
 				dataProvider: dataProvider,
 				dataStorage: dataStorage
 			)
-		case .board: 		return ViewController(text: "Board")
+		case .board:
+			return BoardUnitView({ _ in })
 		}
 	}
 }
