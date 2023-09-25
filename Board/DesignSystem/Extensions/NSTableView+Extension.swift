@@ -78,7 +78,7 @@ extension NSTableView.ColumnStyle {
 		case .flexible(_ , let max):
 			return max
 		case .toggle:
-			return 42
+			return 64
 		}
 	}
 }

@@ -12,6 +12,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	lazy var coordinator = AppCoordinator(router: AppRouter())
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
+
+		NSApp.mainMenu = MenuBuilder.makeMain()
+
 		coordinator.start()
 	}
 
