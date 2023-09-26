@@ -42,11 +42,11 @@ extension MenuBuilder.Item {
 			let item = NSMenuItem()
 			item.title = "Set estimation"
 			item.submenu = NSMenu()
-			for number in [0, 1, 2, 3, 5, 8, 13, 21, 34, 55] {
+			for (index, number) in [0, 1, 2, 3, 5, 8, 13, 21, 34, 55].enumerated() {
 				item.submenu?.addItem(
-					withTitle: "\(number)",
+					withTitle: "\(number) sp",
 					action: #selector(MenuSupportable.setEstimation(_:)),
-					keyEquivalent: ""
+					keyEquivalent: "\(index)"
 				)
 				item.submenu?.items.last?.tag = number
 			}
