@@ -56,8 +56,7 @@ final class BacklogUnitView: NSViewController {
 extension BacklogUnitView: BacklogView {
 
 	func display(_ models: [BacklogRowModel]) {
-		self.models = (models as NSArray).sortedArray(using: table.sortDescriptors) as! [BacklogRowModel]
-		table.reloadData()
+		reloadTable(models)
 	}
 }
 

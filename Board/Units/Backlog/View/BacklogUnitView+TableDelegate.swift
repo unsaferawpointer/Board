@@ -22,8 +22,7 @@ extension BacklogUnitView: NSTableViewDelegate {
 	}
 
 	func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
-		self.models = (models as NSArray).sortedArray(using: tableView.sortDescriptors) as! [BacklogRowModel]
-		tableView.reloadData()
+		reloadTable(models)
 	}
 
 }

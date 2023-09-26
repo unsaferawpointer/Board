@@ -66,6 +66,8 @@
 		4C3A35C32AC1F86400B00058 /* MenuSupportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A35C22AC1F86400B00058 /* MenuSupportable.swift */; };
 		4C3A35C52AC1F8A100B00058 /* MenuBuilder+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A35C42AC1F8A100B00058 /* MenuBuilder+Item.swift */; };
 		4C3A35CB2AC1FE4B00B00058 /* BoardUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A35CA2AC1FE4B00B00058 /* BoardUnitView.swift */; };
+		4C3A35D02AC3538F00B00058 /* BacklogUnitView+TableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A35CF2AC3538F00B00058 /* BacklogUnitView+TableHelper.swift */; };
+		4C3A35D32AC357E200B00058 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A35D22AC357E200B00058 /* Array+Extension.swift */; };
 		4C807D382AA62EE500FF57F7 /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D362AA62EE500FF57F7 /* TaskEntity+CoreDataClass.swift */; };
 		4C807D392AA62EE500FF57F7 /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D372AA62EE500FF57F7 /* TaskEntity+CoreDataProperties.swift */; };
 		4C807D3D2AA6304200FF57F7 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C807D3C2AA6304200FF57F7 /* DataProvider.swift */; };
@@ -159,6 +161,8 @@
 		4C3A35C22AC1F86400B00058 /* MenuSupportable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSupportable.swift; sourceTree = "<group>"; };
 		4C3A35C42AC1F8A100B00058 /* MenuBuilder+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuBuilder+Item.swift"; sourceTree = "<group>"; };
 		4C3A35CA2AC1FE4B00B00058 /* BoardUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardUnitView.swift; sourceTree = "<group>"; };
+		4C3A35CF2AC3538F00B00058 /* BacklogUnitView+TableHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BacklogUnitView+TableHelper.swift"; sourceTree = "<group>"; };
+		4C3A35D22AC357E200B00058 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		4C807D362AA62EE500FF57F7 /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4C807D372AA62EE500FF57F7 /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4C807D3C2AA6304200FF57F7 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 				4C18601D2AA47BE80066CFAE /* Main.storyboard */,
 				4C18601B2AA47BE80066CFAE /* Assets.xcassets */,
 				4C18606C2AA4C0B10066CFAE /* Common */,
+				4C3A35D12AC357C300B00058 /* Extensions */,
 				4C18608E2AA4F7990066CFAE /* Models */,
 				4C3A35BF2AC1E05F00B00058 /* MenuSupportable */,
 				4C807D342AA6260600FF57F7 /* Services */,
@@ -435,6 +440,7 @@
 			children = (
 				4C1860A32AA50FDE0066CFAE /* Protocols */,
 				4C1860892AA4F2330066CFAE /* BacklogUnitView.swift */,
+				4C3A35CF2AC3538F00B00058 /* BacklogUnitView+TableHelper.swift */,
 				4C1860992AA50CD10066CFAE /* BacklogUnitView+TableDelegate.swift */,
 				4C18609B2AA50D000066CFAE /* BacklogUnitView+DataSource.swift */,
 			);
@@ -520,6 +526,14 @@
 				4C3A35CA2AC1FE4B00B00058 /* BoardUnitView.swift */,
 			);
 			path = Board;
+			sourceTree = "<group>";
+		};
+		4C3A35D12AC357C300B00058 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C3A35D22AC357E200B00058 /* Array+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4C807D342AA6260600FF57F7 /* Services */ = {
@@ -720,6 +734,7 @@
 				4C18601A2AA47BE70066CFAE /* Board.xcdatamodeld in Sources */,
 				4C1860722AA4C13D0066CFAE /* StateProvider.swift in Sources */,
 				4C3A35C52AC1F8A100B00058 /* MenuBuilder+Item.swift in Sources */,
+				4C3A35D02AC3538F00B00058 /* BacklogUnitView+TableHelper.swift in Sources */,
 				4C807D4A2AA6404B00FF57F7 /* CDContainer.swift in Sources */,
 				4C807D482AA638F700FF57F7 /* CDProvider.swift in Sources */,
 				4C807D382AA62EE500FF57F7 /* TaskEntity+CoreDataClass.swift in Sources */,
@@ -754,6 +769,7 @@
 				4C1860152AA47BE70066CFAE /* AppDelegate.swift in Sources */,
 				4C1860672AA4B8E30066CFAE /* NavigationItem.swift in Sources */,
 				4C807D3D2AA6304200FF57F7 /* DataProvider.swift in Sources */,
+				4C3A35D32AC357E200B00058 /* Array+Extension.swift in Sources */,
 				4C1860642AA4ACF40066CFAE /* LabelConfig.swift in Sources */,
 				4C3A35C32AC1F86400B00058 /* MenuSupportable.swift in Sources */,
 				4C18606E2AA4C0CB0066CFAE /* AppStateProvider.swift in Sources */,
